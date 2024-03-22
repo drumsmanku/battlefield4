@@ -1,0 +1,46 @@
+.invite {
+  position: relative;
+  overflow: hidden; 
+}
+
+.expanded-content {
+  position: fixed;
+  top: 0;
+  right: -100%; 
+  width: 12%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transition: right 0.2s ease-out;
+}
+
+.invite:hover .expanded-content {
+  right: 0; 
+}
+
+.onContainer:hover .plusContainer {
+  background-color: black;
+  color: white;
+}
+
+.parent-hover img {
+  opacity: 0.5; 
+}
+
+.parent-hover p {
+  color: rgba(255, 255, 255, 0.5); 
+}
+.parent-hover:hover {
+  background-color: white; 
+}
+
+.parent-hover:hover img {
+  opacity: 1; 
+}
+
+.parent-hover:hover p {
+  color: black;
+}
+
+
+

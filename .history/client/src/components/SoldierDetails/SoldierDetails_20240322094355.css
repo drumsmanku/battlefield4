@@ -1,0 +1,47 @@
+.glow{
+  transition: text-shadow 0.1s ease-in-out;
+}
+.glow:hover {
+  /* Making the text color fully white */
+  text-shadow:  0 0 3px rgba(255, 255, 255, 0.5),
+                0 0 6px rgba(255, 255, 255, 0.3),
+                0 0 9px rgba(255, 255, 255, 0.2); /* Creating the glowing effect */
+}
+.stats{
+  color: white;
+  font-weight: bold;
+}
+.stats:hover {
+  background-color: #FFFFFF; /* Changes background to white on hover */
+  color: black; /* Changes text color to black on hover */
+  border-color: #E0E0E0; /* Optional: Changes border color to a lighter shade for better visibility */
+}
+
+/* Normal state styling */
+.divContainer {
+  background-color: rgba(16, 16, 16, 0.5);
+  padding: 8px; /* Equivalent to 'p-2' */
+  width: 45%;
+  margin-right: 8px; /* Equivalent to 'mr-2' */
+  margin-bottom: 8px; /* Equivalent to 'mb-2' */
+  color: rgba(255, 255, 255, 0.75);
+  transition: background-color 0.5s, color 0.5s;
+}
+.divContainer>h1{
+  color: white;
+}
+
+.divContainer img {
+  filter: none;
+  transition: filter 0.5s;
+}
+
+/* Hover state styling */
+.divContainer:hover {
+  background-color: white;
+  color: black;
+}
+
+.divContainer:hover img {
+  filter: grayscale(100%) brightness(0);
+}

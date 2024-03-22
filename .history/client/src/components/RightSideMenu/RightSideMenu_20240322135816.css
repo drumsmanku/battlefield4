@@ -1,0 +1,50 @@
+.invite {
+  position: relative;
+}
+
+.expanded-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 12%; /* Width of the expanded content */
+  height: 100vh; /* Full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+  z-index: 999; /* Ensure it appears on top of other content */
+  transition: transform 0.5s ease-out; /* Transition for smooth sliding */
+  transform: translate3d(100%, 0, 0); /* Initially off-screen to the right */
+}
+
+.invite.expanded .expanded-content {
+  transform: translate3d(0, 0, 0); /* Slide in when invite div is hovered */
+}
+
+/* CSS */
+/* When hovering over the main div, change the color of the "+" div */
+.onContainer:hover .plusContainer {
+  background-color: black;
+  color: white;
+}
+/* Ensures the hover state applies correctly */
+.hoverEffect {
+  width: 100%;
+  cursor: pointer; /* Optional: Changes the cursor to indicate a clickable area */
+}
+
+/* Hover state that changes the background to white and text to black */
+.hoverEffect:hover {
+  background-color: #ffffff; /* White background on hover */
+}
+
+.hoverEffect:hover h1,
+.hoverEffect:hover .pTag {
+  color: #000000; /* Black text color on hover for both h1 and p tags */
+}
+
+/* Initial state of p tag with specific styling */
+.pTag {
+  color: rgba(255, 255, 255, 0.5); /* Initial lighter white color of the p tag */
+  font-weight: bold;
+  font-size: 12px; /* Ensuring the style matches your requirements */
+}
+
+

@@ -1,0 +1,54 @@
+.invite {
+  position: relative;
+}
+
+.expanded-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 12%; /* Width of the expanded content */
+  height: 100vh; /* Full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+  z-index: 999; /* Ensure it appears on top of other content */
+  transition: transform 0.5s ease-out; /* Transition for smooth sliding */
+  transform: translate3d(100%, 0, 0); /* Initially off-screen to the right */
+}
+
+.invite.expanded .expanded-content {
+  transform: translate3d(0, 0, 0); /* Slide in when invite div is hovered */
+}
+
+/* CSS */
+/* When hovering over the main div, change the color of the "+" div */
+.onContainer:hover .plusContainer {
+  background-color: black;
+  color: white;
+}
+/* Style for the div and its hover state */
+.divClassName {
+  width: 100%;
+}
+
+.divClassName:hover {
+  background-color: #000000; /* Black background on hover */
+}
+
+.divClassName:hover h1,
+.divClassName:hover .pTag {
+  color: black; /* White text color on hover for both h1 and p tags */
+}
+
+/* Specific style for the p tag to ensure it changes color on hover */
+/* Make sure this color matches your design requirements outside the hover state */
+.pTag {
+  color: #ffffff; /* Starting color of the p tag */
+  opacity: 0.5; /* Adjust the opacity as needed */
+}
+
+/* Ensure the p tag achieves the desired hover effect */
+.divClassName:hover .pTag {
+  color: #ffffff; /* Ensuring the p tag text also turns white on hover */
+  opacity: 1; /* Optional: Adjust opacity on hover if needed */
+}
+
+

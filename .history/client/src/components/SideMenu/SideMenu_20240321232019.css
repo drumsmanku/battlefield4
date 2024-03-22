@@ -1,0 +1,9 @@
+/* App.css */
+.image-opacity {
+  opacity: 0.5;
+  transition: opacity 0.5s ease; /* Smooth transition for opacity change */
+}
+
+.image-opacity:hover {
+  opacity: 1;
+}

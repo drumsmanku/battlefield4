@@ -1,0 +1,47 @@
+.invite {
+  position: relative;
+  overflow: hidden; /* Prevents content from overflowing during transition */
+}
+
+.expanded-content {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Start off-screen */
+  width: 12%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transition: right 0.2s ease-out; /* Transition based on the `right` property */
+}
+
+.invite:hover .expanded-content {
+  right: 0; /* Move into view when `.invite` is hovered */
+}
+/* CSS */
+/* When hovering over the main div, change the color of the "+" div */
+.onContainer:hover .plusContainer {
+  background-color: black;
+  color: white;
+}
+
+.parent-hover img {
+  opacity: 0.5; /* Initial opacity for the image */
+}
+
+.parent-hover p {
+  color: rgba(255, 255, 255, 0.5); /* Makes sure the text color is set globally via CSS */
+}
+.parent-hover:hover {
+  background-color: white; /* Change background to white on hover */
+}
+
+.parent-hover:hover img {
+  opacity: 1; /* Change image opacity to 100% on hover */
+}
+
+.parent-hover:hover p {
+  color: black; /* Change text color to black on hover */
+}
+
+
+

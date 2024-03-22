@@ -1,0 +1,9 @@
+
+.image-opacity {
+  opacity: 0.5;
+  transition: opacity 0.2s ease; 
+}
+
+.image-opacity:hover {
+  opacity: 1;
+}

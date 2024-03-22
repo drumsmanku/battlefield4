@@ -1,0 +1,10 @@
+.glow{
+  transition: text-shadow 0.3s ease-in-out;
+}
+.glow:hover {
+  color: white; /* Making the text color fully white */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+               0 0 20px rgba(255, 255, 255, 0.5),
+               0 0 30px rgba(255, 255, 255, 0.3),
+               0 0 40px rgba(255, 255, 255, 0.1); /* Creating the glowing effect */
+}

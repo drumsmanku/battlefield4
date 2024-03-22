@@ -1,0 +1,7 @@
+.opacity-50 {
+  opacity: 0.5; /* Initial opacity */
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1; /* Opacity on hover */
+}

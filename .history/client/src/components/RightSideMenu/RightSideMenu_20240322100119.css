@@ -1,0 +1,17 @@
+.invite {
+  position: relative;
+}
+
+.expanded-content {
+  position: absolute;
+  top: 0;
+  left: -20%; /* Initially off-screen */
+  width: 20%; /* Width of the expanded content */
+  height: 100%;
+  background-color: #fff; /* Adjust styling as needed */
+  transition: left 0.3s ease; /* Transition for smooth sliding */
+}
+
+.invite.expanded .expanded-content {
+  left: 0; /* Slide in when invite div is hovered */
+}

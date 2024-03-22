@@ -1,0 +1,14 @@
+.slide-in-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; /* Adjust as needed */
+  width: 20%;
+  background: #fff; /* Example background, adjust as needed */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.invite:hover ~ .slide-in-content {
+  transform: translateX(0%);
+}

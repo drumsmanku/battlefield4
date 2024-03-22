@@ -1,0 +1,13 @@
+/* RightSideMenu.module.css */
+.slide-in-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.invite:hover + .slide-in-content {
+  transform: translateX(0);
+}
