@@ -1,3 +1,4 @@
+
 import misc_img from '../../assets/side-menu__misc.png';
 import game_side_1 from '../../assets/game_side_1.png'
 import game_side_2 from '../../assets/game_side_2.png'

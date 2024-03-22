@@ -1,5 +1,5 @@
 "use client"
-import {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import soldier_det from '../../assets/soldier__look.png';
 import level from '../../assets/soldier__level.png';

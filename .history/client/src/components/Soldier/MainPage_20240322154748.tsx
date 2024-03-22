@@ -1,3 +1,4 @@
+
 import styles from './MainPage.module.css'
 import SideMenu from '../SideMenu/SideMenu';
 import SoldierDetails from '../SoldierDetails/SoldierDetails';
